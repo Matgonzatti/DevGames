@@ -1,0 +1,16 @@
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\DevGames.deps.json
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\DevGames.runtimeconfig.json
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\DevGames.runtimeconfig.dev.json
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\DevGames.dll
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\DevGames.pdb
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.csprojAssemblyReference.cache
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.RazorAssemblyInfo.cache
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.RazorAssemblyInfo.cs
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.AssemblyInfoInputs.cache
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.AssemblyInfo.cs
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.RazorTargetAssemblyInfo.cache
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.dll
+C:\Users\user\Source\repos\DevGames\DevGames\obj\Debug\netcoreapp2.2\DevGames.pdb
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\user\Source\repos\DevGames\DevGames\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
