@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using DevGames.Services;
 
 namespace DevGames
 {
@@ -31,6 +32,8 @@ namespace DevGames
 
             services.AddSingleton<IGamesstoreDatabaseSettings>
                 (sp => sp.GetRequiredService<IOptions<GamesstoreDatabaseSettings>>().Value);
+
+            services.AddSingleton<GameService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

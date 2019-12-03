@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using DevGames.Models;
+using DevGames.Services;
 
 namespace DevGames.Controllers
 {
@@ -11,24 +13,38 @@ namespace DevGames.Controllers
     [ApiController]
     public class GamesController : ControllerBase
     {
+        private readonly GameService _gameService;
+
+        public GamesController(GameService gameService)
+        {
+            _gameService = gameService;
+        }
+
         // GET: api/Games
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<List<Games>>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await _gameService.Get();
         }
 
         // GET: api/Games/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "GetGame")]
+        public async Task<ActionResult<Games>> GetById(string id)
         {
-            return "value";
+            return await _gameService.GetById(id);
         }
 
         // POST: api/Games
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Games>> Create(Games game)
         {
+            if (ModelState.IsValid)
+            {
+                await _gameService.Create(game);
+                return CreatedAtRoute("GetGame", new { id = game.Id.ToString() }, game);
+            }
+
+            return BadRequest();
         }
 
         // PUT: api/Games/5
